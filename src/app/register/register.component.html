@@ -1,0 +1,18 @@
+<hr>
+<h1 class="text-center text-success mt-5">Registeration</h1>
+
+<div class="row w-100">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center flex-column border-3 shadow p-4 m-5 md-md-0">
+        <form>
+            <input type="text" placeholder="username" class="form-control w-100" [(ngModel)]="username" name="usid" >
+            <input type="email" placeholder="email" class="form-control w-100 mt-4" [(ngModel)]="email" name="usmail" >
+            <input type="password" placeholder="password" class="form-control w-100 mt-4" [(ngModel)]="password" name="uspswd" >
+            <div class="mt-4 w-100 d-flex">
+                <button class="btn btn-danger" type="button" (click)="Cancel()">Cancel</button>
+                <button class="btn btn-primary ms-auto" type="button" (click)="Register()">Register</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>

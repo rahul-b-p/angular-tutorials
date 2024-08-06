@@ -1,0 +1,17 @@
+<h1 class="text-center text-success mt-5">Login</h1>
+
+<div class="row w-100">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center flex-column border-3 shadow p-4 m-5 md-md-0">
+        <form>
+            <input type="email" placeholder="email" class="form-control w-100 mt-4" [(ngModel)]="logEmail" name="usmail" >
+            <input type="password" placeholder="password" class="form-control w-100 mt-4" [(ngModel)]="logPassword" name="uspswd" >
+            <div class="mt-4 w-100 d-flex">
+                <button class="btn btn-danger" type="button" (click)="Cancel()">Cancel</button>
+                <button class="btn btn-primary ms-auto" type="button" (click)="Login()">Login</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+
